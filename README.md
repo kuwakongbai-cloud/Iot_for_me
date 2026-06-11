@@ -97,8 +97,8 @@ Core dependency library list:
 
 ### 2. Confidential Credential Storage
 For code security, hardcoding any keys in `main.cpp` is strictly prohibited. You must create a `credentials.h` file in the project's src directory and configure the following content:
-```
-C++
+
+```C++
 #ifndef CREDENTIALS_H
 #define CREDENTIALS_H
 
@@ -112,8 +112,8 @@ C++
 ```
 ### 3. Configuration, Compilation and Flashing
 Please ensure that in `platformio.ini` you have enabled `PSRAM` and correctly selected the board type:
-```
-text
+
+```text
 [env:esp32-s3-devkitc-1]
 platform = espressif32
 board = esp32-s3-devkitc-1
